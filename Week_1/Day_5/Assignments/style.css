@@ -1,0 +1,76 @@
+.container {
+    display: inline-block;
+    position:absolute;
+    top:20%;
+    left:50%;
+}
+
+.head{
+    background-color: magenta;
+    padding:50px;
+    border-radius: 50px;
+}
+
+.body {
+    background-color: magenta;
+    padding:120px 50px 20px 20px;
+    border-radius: 100px 100px 150px 150px;
+}
+
+.lega {
+    background-color: magenta;
+    padding:15px 15px;
+    transform: rotate(100deg);
+    position: relative;
+    top:10px;
+    left:-30px;
+    border-radius: 50px;
+
+}
+
+.legb {
+    background-color: magenta;
+    padding:15px 15px;
+    position:relative;
+    top:-20px;
+    left:20px;
+    transform: rotate(260deg);
+    border-radius: 50px;
+}
+
+.arma {
+    background-color: magenta;
+    padding:15px 15px;
+    position:relative;
+    top:-170px;
+    left:50px;
+    transform: rotate(30deg);
+    border-radius: 50px;
+}
+
+.armb {
+    background-color: magenta;
+    padding:15px 15px;
+    position:relative;
+    top:-200px;
+    left:-50px;
+    transform: rotate(330deg);
+    border-radius: 50px;
+}
+
+.lega:hover {
+    transform: rotate(120deg);
+}
+
+
+.legb:hover {
+    transform: rotate(-120deg);
+}
+
+.arma:hover {
+    transform: rotate(120deg);
+}
+
+.armb:hover {
+    transform: rotate(-120deg);
+}
