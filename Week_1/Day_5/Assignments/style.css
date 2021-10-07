@@ -1,76 +1,50 @@
-.container {
-    display: inline-block;
-    position:absolute;
-    top:20%;
-    left:50%;
+body > div {
+    transition: all 0.3s ease;
+    font-family: Avenir, sans-serif;
+    font-size:2em;
+    margin:10px;
 }
 
-.head{
-    background-color: magenta;
+.q {
+    background-color:green;
     padding:50px;
-    border-radius: 50px;
+    display: inline-flex;
+    color:white;
 }
 
-.body {
+.a {
+    opacity:50%;
+}
+
+.a:hover {
+    opacity:100%;
+}
+
+.b:hover {
     background-color: magenta;
-    padding:120px 50px 20px 20px;
-    border-radius: 100px 100px 150px 150px;
+    color:white;
 }
 
-.lega {
-    background-color: magenta;
-    padding:15px 15px;
-    transform: rotate(100deg);
-    position: relative;
-    top:10px;
-    left:-30px;
-    border-radius: 50px;
-
+.c:hover {
+    transform: scale(1.2);
 }
 
-.legb {
-    background-color: magenta;
-    padding:15px 15px;
-    position:relative;
-    top:-20px;
-    left:20px;
-    transform: rotate(260deg);
-    border-radius: 50px;
+.d:hover {
+    transform: scale(0.8);
 }
 
-.arma {
-    background-color: magenta;
-    padding:15px 15px;
-    position:relative;
-    top:-170px;
-    left:50px;
-    transform: rotate(30deg);
-    border-radius: 50px;
+.e:hover {
+    transform:rotateZ(15deg);
 }
 
-.armb {
-    background-color: magenta;
-    padding:15px 15px;
-    position:relative;
-    top:-200px;
-    left:-50px;
-    transform: rotate(330deg);
-    border-radius: 50px;
+.f:hover {
+    border-radius:50%;
 }
 
-.lega:hover {
-    transform: rotate(120deg);
+.g:hover {
+    box-shadow: 3px 3px 4px 2px black;
 }
 
-
-.legb:hover {
-    transform: rotate(-120deg);
-}
-
-.arma:hover {
-    transform: rotate(120deg);
-}
-
-.armb:hover {
-    transform: rotate(-120deg);
+.h:hover {
+    box-shadow: inset 1px 1px 3px 3px black;
 }
