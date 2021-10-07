@@ -1,0 +1,63 @@
+.container {
+    display: grid;
+    text-align: center;
+    border:1px solid black;
+    height:500px;
+    width:50%;
+    margin:0px;
+    grid-template-rows: repeat(9, 1fr);
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-areas:
+        "header header header header header"
+        "hero hero main main main"
+        "hero hero main main main"
+        "sidebar sidebar main main main"
+        "sidebar sidebar extra extra extra"
+        "sidebar sidebar extra extra extra"
+        "related related related related_posts related_posts"
+        "related related related related_posts related_posts"
+        "footer footer footer footer footer";
+}
+.o {
+    margin:3px;
+}
+
+.header {
+    background-color: #f54288;
+    grid-area: header;
+}
+
+.hero {
+    background-color: orange;
+    grid-area: hero;
+}
+
+.sidebar {
+    background-color:lightblue;
+    grid-area: sidebar;
+}
+
+.main {
+    background-color: magenta;
+    grid-area: main;
+}
+
+.extra {
+    background-color:yellow;
+    grid-area: extra;
+}
+
+.related {
+    background-color: #00c4ff;
+    grid-area: related;
+}
+
+.related_posts {
+    background-color: mediumpurple;
+    grid-area: related_posts;
+}
+
+.footer {
+    background-color: lawngreen;
+    grid-area: footer;
+}
