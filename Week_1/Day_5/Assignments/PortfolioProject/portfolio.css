@@ -1,0 +1,146 @@
+html {
+    font-family: Avenir, sans-serif;
+}
+
+body {
+    margin: 0;
+    display: inline-block;
+}
+
+.navItem {
+    list-style-type: none;
+    display: inline-flex;
+    justify-content: space-evenly;
+    margin: .25em 1em 0 .25em;
+    font-size: 1.75em;
+}
+
+.landing {
+    border: 1px solid black;
+    background-color: black;
+    color: white;
+    font-size: 4em;
+    width: 100vw;
+    height: 50vh;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url("https://wallpaperaccess.com/full/1154200.jpg");
+    margin-top: 0;
+}
+
+.service {
+    border: 1px solid lightgray;
+    text-align: center;
+    margin: 0.5em;
+}
+
+.services {
+    font-size: 1.5em;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.serviceImg {
+    height: 25vh;
+    width: auto;
+}
+
+.aboutMe {
+    display: block;
+    background-color: #f3f3f3;
+    height: 100%;
+    width: 100vw;
+    margin: 2em 0;
+    padding: 1em 0;
+    font-size: 2em;
+}
+
+.aboutMeTxt {
+    margin: 1em 1em;
+}
+
+.contactForm {
+    margin: 2em;
+    display: block;
+    width: 100vw;
+    padding: 50px;
+    background-color: #f3f3f3;
+}
+
+.inputBox {
+    display: flex;
+    width: 96%;
+    padding: 1em 1em;
+    border: 1px solid gray;
+    font-family: Avenir, sans-serif;
+    font-size: 1.25em;
+    outline: none;
+}
+
+.inputBox:focus {
+    background-color: yellow;
+    color: black;
+}
+
+.inputBox:hover {
+    background-color: yellow;
+}
+
+.contactFormButton {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    width: 100%;
+    padding: 1em;
+    border: 1px solid lightgray;
+    font-family: Avenir, sans-serif;
+    font-size: 1.5em;
+    outline: none;
+}
+
+.contactFormButton:hover {
+    background-color: darkslategray;
+    cursor: pointer;
+}
+
+.contactContainer {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+}
+
+@media screen and (max-width: 1250px) {
+    .services {
+        font-size: 2em;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0.5em;
+    }
+
+    .service {
+        width: 70%;
+        max-width: 500px;
+        margin: 0.5em;
+    }
+
+    .aboutMe {
+        display: inline-block;
+        flex-wrap: wrap;
+    }
+
+    .contactContainer {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .contactFormHeader {
+        text-align: center;
+    }
+
+}
+
+
