@@ -1,0 +1,51 @@
+html {
+    font-family: Rockwell;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.all {
+    display: flex;
+    flex-direction: row;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color:lightgray;
+    padding:2em;
+}
+
+.inputbox {
+    width:70%;
+    margin:1em;
+    padding:1em;
+    border:1px black solid;
+}
+
+.button {
+    padding:1em;
+    border: 1px black solid;
+    width:100%;
+    background-color: #44e744;
+    color:black;
+}
+
+.container2 {
+    background-color:purple;
+    flex-direction: column;
+    padding:2em;
+    color: white;
+}
+
+button {
+    padding:1em 5em;
+    font-family:rockwell,sans-serif;
+    color:white;
+    border:1px white solid;
+    border-radius:15px;
+    background-color:purple;
+    outline:none;
+}

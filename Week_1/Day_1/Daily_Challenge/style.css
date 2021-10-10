@@ -1,0 +1,55 @@
+html {
+    font-family:rockwell, sans-serif;
+    margin:0;
+    background-color:black;
+}
+
+body {
+    margin:0
+}
+
+.navItem {
+    list-style-type: none;
+    display: inline-block;
+    margin: 1% 5% 0 0;
+    color:white;
+    font-size:2.2em;
+
+}
+
+nav {
+    margin:0 0;
+    text-align: right;
+}
+
+.site {
+    background-image: url("https://wallpaperaccess.com/full/55573.jpg");
+    background-size: 100%;
+    width:100vw;
+    height:100vh;
+    margin:0 0;
+    background-repeat: no-repeat;
+}
+
+ul {
+    margin:0;
+}
+
+.header {
+    color:white;
+    font-size:4em;
+    width:50%;
+    position:relative;
+    top:5%;
+    left:50%;
+}
+
+.paragraph {
+    color:white;
+    font-size:1.5em;
+    position:relative;
+    left:50%;
+    top:5%;
+    width:50%;
+
+}
