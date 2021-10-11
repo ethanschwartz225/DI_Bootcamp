@@ -1,16 +1,29 @@
-//Exercise 1
+// Daily Challenge
+// Exercise 1
+// let fruits = ["Banana", "Apples", "Oranges", "Blueberries"];
+
+// 1. Remove Banana from the array.
+// 2. Sort the array in alphabetical order.
+// 3. Add “Kiwi” to the end of the array.
+// 4. Remove “Apples” from the array. Don’t use the same method as in part 1.
+// 5. Sort the array in reverse order. (Not alphabetical, but reverse the current Array i.e. [‘a’, ‘c’, ‘b’] becomes [‘b’, ‘c’, ‘a’])
+//
+// Goal: ["Kiwi", "Oranges", "Blueberries"]
+
 let fruits = ["Banana", "Apples", "Oranges", "Blueberries"];
-// to get rid of Banana
-fruits.splice(0, 1)
-
-// to sort in alphabetical order
+// to remove banana
+fruits.shift(0,1)
+// to alphabetize
 fruits.sort()
-
-// to add Kiwi to the array
+// to add "kiwi"
 fruits.push("Kiwi")
+// to omit apple
+fruits.splice(0,1)
+// to reverse the current order of items
+fruits.reverse()
 
-// // to omit Apples and sort them in the reverse order
-fruits.slice(1,4).reverse()
+console.log(fruits)
+
 
 
 
