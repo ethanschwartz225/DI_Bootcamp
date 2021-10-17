@@ -1,0 +1,51 @@
+<html lang="en">
+<body>
+  <div id="container">Users:</div>
+  <ul class="list">
+    <li>John</li>
+    <li>Pete</li>
+  </ul>
+  <ul class="list">
+    <li>David</li>
+    <li>Sarah</li>
+    <li>Dan</li>
+  </ul>
+
+  <script>
+  
+//   let replaceThis = document.querySelector("ul").lastElementChild;
+//   replaceThis.textContent = "Richard";
+//
+//
+// document.getElementsByTagName("li")[0].innerHTML = "<li>Ethan</li>"
+// document.getElementsByTagName("li")[3].innerHTML = "<li>Ethan</li>"
+//
+//
+//   let newListItem = document.createElement("li")
+//   // document.querySelectorAll("ul").appendChild(newListItem).textContent = "Hey Students!"
+//   // document.querySelector("ul").appendChild(newListItem).textContent = "Hey Students!"
+// document.getElementsByTagName("ul")[0].appendChild(newListItem).textContent = "Hey Students!"
+// document.getElementsByTagName("ul")[1].appendChild(newListItem).textContent = "Hey Students!"
+
+  // Exercise 2 : Users
+let replacementUl = document.querySelectorAll("li")[1]
+replacementUl.innerText = "Richard"
+let list = document.querySelectorAll(".list");
+for(let listItems of list){
+    listItems.firstElementChild.textContent ="Ethan"
+}
+
+
+for (let listItems2 of list){
+    let newLi = document.createElement("li")
+    newLi.textContent = "Hey Students!";
+    listItems2.appendChild(newLi)
+}
+let sarahElement = document.body.children[2];
+sarahElement.removeChild(sarahElement.children[1])
+  
+
+  
+  </script>
+</body>
+</html>

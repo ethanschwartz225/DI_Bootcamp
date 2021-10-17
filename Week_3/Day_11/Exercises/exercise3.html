@@ -1,0 +1,40 @@
+<!--Exercise 3 : Users And Style
+
+Instructions-->
+
+<html lang="en">
+<body>
+  <div>Users:</div>
+  <ul>
+    <li>John</li>
+    <li>Pete</li>
+  </ul>
+</body>
+
+<script>
+    let divElement = document.querySelector("div");
+   divElement.style.background = "lightblue";
+   divElement.style.padding = "25px";
+   
+    document.querySelector("li").style.display = "none";
+    document.querySelector("li").nextElementSibling.style.border = "1px black solid"
+
+    document.body.style.fontSize = "2em"
+    
+    if(divElement.style.background === "lightblue"){
+        alert("Hello John and Pete")
+    } else {
+    
+    }
+   
+</script>
+</html>
+
+
+<!--For the following exercise use the HTML presented above:-->
+
+<!--Add a “light blue” background color and some padding to the <div>.-->
+<!--Do not display the first name (John) in the list.-->
+<!--Add a border to the second name (Pete).-->
+<!--Change the font size of the whole body.-->
+<!--Bonus: If the background color of the div is “light blue”, alert “Hello x and y” (x and y are the users in the div).-->
