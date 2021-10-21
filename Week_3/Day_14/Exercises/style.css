@@ -1,0 +1,42 @@
+.container {
+    width:75vw;
+    border:1px solid black;
+    display: flex;
+    justify-content: center;
+    padding:25px;
+}
+
+.colorPalette {
+    width:30%;
+    border:1px black solid;
+    display: grid;
+    grid-template-columns: 1fr repeat(2, 1fr);
+    grid-template-rows: 1fr repeat(3, 2fr);
+    justify-content: center;
+}
+
+.paintingArea {
+    width:70%;
+    border:1px solid black;
+    display: grid;
+    grid-template-rows: repeat(24, 1fr);
+    grid-template-columns: repeat(60, 1fr);
+}
+
+.colorSelector {
+    padding:15px;
+    box-sizing: border-box;
+    margin:0;
+    transition-duration: 0.5s;
+}
+
+.colorSelector:hover {
+    transform:scale(1.05);
+    box-shadow: black 0 0 5px 1px;
+}
+
+.gridbox {
+    padding:2px;
+    border:1px solid lightgray;
+}
+

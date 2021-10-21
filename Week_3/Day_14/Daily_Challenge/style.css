@@ -1,0 +1,70 @@
+*{
+    box-sizing: border-box;
+    text-align: center;
+}
+
+html {
+    font-family: "Heiti SC", sans-serif;;
+}
+
+h1 {
+    color:white;
+}
+
+body {
+        background-image: linear-gradient(#ff2e4c ,rgba(255, 0, 59, 0.54));
+        background-repeat:no-repeat;
+        height: 100vh;
+}
+
+form {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+.wrapper {
+    width:40%;
+    border:none;
+    background-color: white;
+    display: flex;
+    justify-content: inherit;
+    padding:0.5em;
+}
+
+.input {
+    padding:1em;
+    border:none;
+    text-align: left;
+    background-color: white;
+    outline:none;
+    font-size:1em;
+}
+
+.input:focus{
+    border-bottom: 1px solid blue;
+}
+
+button {
+    border:none;
+    background-color: white;
+    font-size:1.2em;
+    color: #0099ff;
+    font-weight: bold;
+}
+
+/*Need the next to style the new div. Find a way to javascript create each of these with eventListener*/
+
+.list {
+    width:40%;
+    background-color:white;
+    display: flex;
+    justify-content: left;
+    text-align: left;
+    padding:1em;
+}
+
+
+
+
+
