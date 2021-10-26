@@ -9,9 +9,11 @@ let groceries = {
 }
 
 let groceriesCopy = groceries;
-console.log(groceriesCopy);
+
 groceries["totalPrice"] = "35$"
-console.log(groceriesCopy);
 groceries["payed"] = false;
 
-// You will not see a change in these items.
+console.log(groceriesCopy);
+console.log(groceries);
+
+// Both will change.
