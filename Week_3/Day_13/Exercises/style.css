@@ -1,0 +1,26 @@
+section {
+    display: flex;
+    justify-content: start;
+}
+
+#draggable {
+    background-color: pink;
+    padding:25px;
+
+}
+
+.dropzone {
+    background-color: lightblue;
+    padding:125px;
+}
+
+.dropzoneContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.startDragging {
+	border:  2px solid red;
+	border-radius:  25px;
+	background-color: pink;
+}

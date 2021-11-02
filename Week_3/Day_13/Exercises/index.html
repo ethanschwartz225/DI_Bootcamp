@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+    #container {
+      width: 400px;
+      height: 400px;
+      position: relative;
+      background: yellow;
+    }
+    #animate {
+      width: 50px;
+      height: 50px;
+      position: absolute;
+      background-color: red;
+    }
+    </style>
+    <link rel="stylesheet" href="style.css">
+    <title>Exercise 1</title>
+</head>
+
+<body>
+    <p><button onclick="myMove()">Click Me</button></p>
+    <div id="container">
+      <div id="animate"></div>
+    </div>
+
+    <section class="draggableContainer" id="draggableContainer">
+        <div id="draggable" class="draggable" draggable="true">Draggable</div>
+    </section>
+
+    <section id="dropzoneContainer" class="dropzoneContainer">
+        <div class="dropzone" id="dropzone">Dropzone</div>
+    </section>
+
+</body>
+
+<script src="script.js"></script>
+</html>
