@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        form {
+            display: flex;
+            justify-content: flex-start;
+            width:35%;
+            border:1px solid black;
+        }
+        
+        input {
+            width: border-box;
+            border:none;
+            outline:none;
+            padding:1em;
+        }
+        
+        button {
+            width: border-box;
+            border: none;
+            outline:none;
+            padding:1em;
+        }
+    </style>
+</head>
+<body>
+
+<form action="exerciseXP.html" id="form">
+    <label for="searchGIF"></label>
+    <input type="text" id="searchGIF" placeholder="Search GIF...">
+    <button id="button">Search</button>
+</form>
+
+<div id="result"></div>
+
+<script src="exerciseXP.js"></script>
+</body>
+</html>

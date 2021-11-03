@@ -1,0 +1,76 @@
+* {
+    font-family: AppleGothic, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    margin:0;
+}
+
+header{
+    margin:1em;
+}
+
+.searchFriends {
+    border: 1px solid lightgray;
+    border-radius:8px;
+    outline:none;
+    padding: 1em;
+    margin:1em;
+}
+
+#button {
+    padding:1em;
+    border:none;
+    background-color: #6363ff;
+    color:white;
+    border-radius:8px;
+    outline:none;
+    transition-duration: 0.3s;
+}
+
+#button:hover {
+    transform: scale(1.05);
+}
+
+.container {
+    width:100vw;
+    height:100%;
+    padding-bottom:1em;
+    background-image: linear-gradient(to top, #8869d1, #7a5eda, #6853e3, #4d49ec, #0d40f6);
+    color:white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.profileCardWrapper {
+    background-color:white;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    border-radius:15px;
+    padding:1.5em;
+    height:auto;
+    margin:1em;
+    max-width: 160px;
+    flex-direction: column;
+}
+
+.profileCardImage {
+    width:100px;
+}
+
+.profileCardName {
+    color:black;
+    font-size:1em;
+}
+
+.profileCardEmail {
+    color:gray;
+    font-size:0.7em;
+    margin:0.2em;
+}
