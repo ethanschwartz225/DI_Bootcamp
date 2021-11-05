@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    
+* {
+    box-sizing: border-box;
+    transition-duration: 0.3s;
+    font-family: "Heiti SC", sans-serif;
+}
+
+body {
+    margin:0;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    width:100%;
+}
+
+.header {
+    font-size:4em;
+}
+
+section {
+    width:100%;
+    display: flex;
+    justify-content: center;
+}
+
+#form {
+    width:50%;
+    box-shadow: 0 0 5px 3px #c1c1c1;
+    border:none;
+    border-radius:2em;
+    padding: 2em  4em;
+}
+
+select {
+    width:100%;
+    padding:1em;
+    border-radius:20px;
+    margin: 0.5em 0;
+    outline:none;
+    border:1px solid #c1c1c1;
+}
+
+#input{
+    width: 100%;
+    padding:1em;
+    margin:0.5em 0;
+    border-radius: 1em;
+    font-size:1.5em;
+    border:none;
+    box-shadow: inset 0 0 5px 2px #c1c1c1;
+    outline:none;
+}
+
+
+
+#button {
+    width:100%;
+    padding:1em;
+    margin:0.5em 0;
+    border-radius: 1em;
+    border:none;
+    font-size:1.5em;
+    background-color: #0055ff;
+    color:white;
+    outline:none;
+}
+
+#button:hover {
+    background-color: #0055ff;
+    cursor:pointer;
+    transform: scale(1.025);
+}
+    </style>
+</head>
+<body>
+
+<header>
+    <h1 class="header" id="header">Currency Converter</h1>
+</header>
+<br>
+<section id="wrapper" class="wrapper">
+    <form action="dailyChallenge.html" id="form">
+        <h2>Hey! I'm your currency convertor. It's as easy as it looks. </h2>
+        <label for="selectInput">
+            <select name="selectInput" id="selectInput">Select Currency</select>
+        </label>
+        
+        <label for="selectSecondInput">
+            <select name="selectInput" id="selectSecondInput">Select Currency</select>
+        </label>
+        
+            <label for="input">
+        <input type="number" id="input" placeholder="">
+            </label>
+        
+        <button id="button">Convert</button>
+    </form>
+</section>
+
+<script>
+let input = document.getElementById("input");
+let selectInput = document.getElementById("selectInput");
+let selectSecondInput = document.getElementById("selectSecondInput")
+let outputCurrency = document.getElementById("outputCurrency")
+let button = document.getElementById("button");
+
+
+
+let url = `http://api.currencylayer.com/live?access_key=6b543e9294a71d26a6606f5449cf71a6&format=1`
+    fetch(url)
+        .then(response => {
+            if(response.status === 200) {
+                console.log("Status: OK");
+                return response.json();
+            } else {
+                throw new Error("Not 200");
+            }
+        })
+        .then(results => {
+            console.log(results.quotes);
+            let currencies = results.quotes;
+            createOptions(currencies)
+        })
+
+
+const createOptions = (currencies) => {
+    selectInput.appendChild(currencies)
+}
+
+
+
+</script>
+</body>
+</html>
