@@ -121,4 +121,3 @@ where film.description = '%boat%'
 
 -- i didn't understand the last question.
 
-

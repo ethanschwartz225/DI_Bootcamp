@@ -29,4 +29,3 @@
 -- select * from customers where customer_last_name = 'Jones';
 
 -- select * from customers where customer_first_name != 'Scott';
-

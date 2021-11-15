@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mini Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1 class="header">To-Do List</h1>
+</header>
+
+<section>
+    <form action="index.html" class="form" id="form">
+            <label for="inputName"></label>
+        <input type="text" class="input" id="inputName" placeholder="Enter task">
+            <label for="inputDescription"></label>
+        <input type="text" class="input" id="inputDescription" placeholder="Enter description">
+            <label for="inputStart"></label>
+        <input type="date" class="input" id="inputStart" >
+            <label for="inputEnd"></label>
+        <input type="date" class="input" id="inputEnd">
+            <label for="status"></label>
+        <select class="input" id="status" value="Done">
+            <option value="notDone">Not Done</option>
+            <option value="Done">Done</option>
+        </select>
+        <button id="button">Submit</button>
+    </form>
+</section>
+
+<section class="results" id="results">
+    <div class="container" id="container"></div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>

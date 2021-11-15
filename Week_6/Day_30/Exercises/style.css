@@ -1,0 +1,99 @@
+* {
+    /*text-align: center;*/
+    font-family: "Heiti SC", sans-serif;
+    transition-duration: 0.3s;
+    box-sizing: border-box;
+}
+
+body {
+    display: block;
+    justify-content: center;
+    margin:0;
+}
+
+header {
+    text-align: center;
+    width:100%;
+    margin:0;
+}
+
+.header {
+    margin:1em 0 0 0;
+}
+
+section {
+    width:100%;
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    width: 60%;
+    display: block;
+    padding:1em;
+}
+
+.input {
+    margin:0.25em 0;
+    padding: 1em;
+    width: 100%;
+    border:1px solid lightgray;
+    text-align: left;
+    outline:none;
+    border-radius: 15px;
+    font-size:1em;
+}
+
+#button {
+    margin:0.25em 0;
+    padding:1em;
+    width: 100%;
+    border:none;
+    outline:none;
+    border-radius: 15px;
+    font-size:1.25em;
+    background-color:lightgray;
+    color:white;
+}
+
+#button:hover {
+    background-color: #088bff;
+    color:white;
+}
+
+#container {
+    width: 50vw;
+    text-align: left;
+    background-color:white;
+    border-radius:15px;
+    height:auto;
+    box-shadow: 2px 2px 10px 3px lightgray;
+}
+
+.newTask {
+    text-align: left;
+    width:100%;
+    font-size:1.25em;
+    border-bottom: 1px solid lightgray;
+    padding:2em;
+}
+
+#newTaskName {
+    align-items: normal;
+}
+
+h4 {
+    color:gray;
+    margin:0.5em;
+}
+
+h1 {
+    color:black;
+    margin:0.5em;
+}
+
+.display {
+    display: block;
+    background-color:red;
+    padding:100px;
+}

@@ -58,5 +58,3 @@
 -- left join customers on customers.customer_id = purchases.customer_id;
 
 -- EXERCISE 2:
-
-
