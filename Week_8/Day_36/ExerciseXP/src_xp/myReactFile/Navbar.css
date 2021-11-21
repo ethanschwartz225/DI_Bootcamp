@@ -1,0 +1,6 @@
+.display {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #282c34;
+    color:white;
+}

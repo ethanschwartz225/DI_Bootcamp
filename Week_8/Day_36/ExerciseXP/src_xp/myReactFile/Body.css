@@ -1,0 +1,9 @@
+.height {
+    height: 50vh;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #61dafb;
+    color: #282828;
+}
