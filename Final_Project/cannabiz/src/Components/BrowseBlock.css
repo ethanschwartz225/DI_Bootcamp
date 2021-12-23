@@ -1,0 +1,18 @@
+.browser-wrapper {
+    display: flex;
+    justify-content: center;
+    width:80%;
+    margin: auto auto;
+}
+
+.browse-border {
+    width: 30%;
+    margin:2em;
+    border-radius: 1em;
+    border:1px solid #3f5555;
+    padding:1em;
+}
+
+.browser-header {
+    color:white;
+}

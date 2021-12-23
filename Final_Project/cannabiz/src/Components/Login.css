@@ -1,0 +1,12 @@
+.login-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin:auto;
+    height:100vh;
+    background-color: #343944;
+}
+
+.register-form-wrapper {
+    margin:auto;
+}
